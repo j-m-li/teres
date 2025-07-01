@@ -1,0 +1,549 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+ FreeCAD Document, see http://www.freecadweb.org for more information...
+-->
+<Document SchemaVersion="1">
+    <ViewProviderData Count="11">
+        <ViewProvider name="BodyOrigin" expanded="0">
+            <Properties Count="3">
+                <Property name="DisplayMode" type="App::PropertyEnumeration">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Size" type="App::PropertyVector">
+                    <PropertyVector valueX="69.600000000000" valueY="300.000036621094" valueZ="13.200036621094"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool">
+                    <Bool value="false"/>
+                </Property>
+            </Properties>
+        </ViewProvider>
+        <ViewProvider name="X_Axis" expanded="0">
+            <Properties Count="9">
+                <Property name="BoundingBox" type="App::PropertyBool">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="DisplayMode" type="App::PropertyEnumeration">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Selectable" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="SelectionStyle" type="App::PropertyEnumeration">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="ShapeColor" type="App::PropertyColor">
+                    <PropertyColor value="848755200"/>
+                </Property>
+                <Property name="ShapeMaterial" type="App::PropertyMaterial">
+                    <PropertyMaterial ambientColor="858993408" diffuseColor="848755200" specularColor="0" emissiveColor="0" shininess="0.200000002980" transparency="0.000000000000"/>
+                </Property>
+                <Property name="Size" type="App::PropertyFloat">
+                    <Float value="69.600000000000"/>
+                </Property>
+                <Property name="Transparency" type="App::PropertyPercent">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+            </Properties>
+        </ViewProvider>
+        <ViewProvider name="Z_Axis" expanded="0">
+            <Properties Count="9">
+                <Property name="BoundingBox" type="App::PropertyBool">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="DisplayMode" type="App::PropertyEnumeration">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Selectable" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="SelectionStyle" type="App::PropertyEnumeration">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="ShapeColor" type="App::PropertyColor">
+                    <PropertyColor value="848755200"/>
+                </Property>
+                <Property name="ShapeMaterial" type="App::PropertyMaterial">
+                    <PropertyMaterial ambientColor="858993408" diffuseColor="848755200" specularColor="0" emissiveColor="0" shininess="0.200000002980" transparency="0.000000000000"/>
+                </Property>
+                <Property name="Size" type="App::PropertyFloat">
+                    <Float value="69.600000000000"/>
+                </Property>
+                <Property name="Transparency" type="App::PropertyPercent">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+            </Properties>
+        </ViewProvider>
+        <ViewProvider name="Body" expanded="1" Extensions="True">
+            <Extensions Count="1">
+                <Extension type="Gui::ViewProviderOriginGroupExtension" name="ViewProviderOriginGroupExtension">
+                </Extension>
+            </Extensions>
+            <Properties Count="22">
+                <Property name="AngularDeflection" type="App::PropertyAngle">
+                    <Float value="28.649999618530"/>
+                </Property>
+                <Property name="BoundingBox" type="App::PropertyBool">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="Deviation" type="App::PropertyFloatConstraint">
+                    <Float value="0.200000002980"/>
+                </Property>
+                <Property name="DiffuseColor" type="App::PropertyColorList">
+                    <ColorList file="DiffuseColor"/>
+                </Property>
+                <Property name="DisplayMode" type="App::PropertyEnumeration">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="DisplayModeBody" type="App::PropertyEnumeration">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="DrawStyle" type="App::PropertyEnumeration">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Lighting" type="App::PropertyEnumeration">
+                    <Integer value="1"/>
+                </Property>
+                <Property name="LineColor" type="App::PropertyColor">
+                    <PropertyColor value="421075200"/>
+                </Property>
+                <Property name="LineColorArray" type="App::PropertyColorList">
+                    <ColorList file="LineColorArray"/>
+                </Property>
+                <Property name="LineMaterial" type="App::PropertyMaterial">
+                    <PropertyMaterial ambientColor="858993408" diffuseColor="421075200" specularColor="0" emissiveColor="0" shininess="1.000000000000" transparency="0.000000000000"/>
+                </Property>
+                <Property name="LineWidth" type="App::PropertyFloatConstraint">
+                    <Float value="2.000000000000"/>
+                </Property>
+                <Property name="PointColor" type="App::PropertyColor">
+                    <PropertyColor value="421075200"/>
+                </Property>
+                <Property name="PointColorArray" type="App::PropertyColorList">
+                    <ColorList file="PointColorArray"/>
+                </Property>
+                <Property name="PointMaterial" type="App::PropertyMaterial">
+                    <PropertyMaterial ambientColor="858993408" diffuseColor="421075200" specularColor="0" emissiveColor="0" shininess="1.000000000000" transparency="0.000000000000"/>
+                </Property>
+                <Property name="PointSize" type="App::PropertyFloatConstraint">
+                    <Float value="2.000000000000"/>
+                </Property>
+                <Property name="Selectable" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="SelectionStyle" type="App::PropertyEnumeration">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="ShapeColor" type="App::PropertyColor">
+                    <PropertyColor value="3435973632"/>
+                </Property>
+                <Property name="ShapeMaterial" type="App::PropertyMaterial">
+                    <PropertyMaterial ambientColor="858993408" diffuseColor="3435973632" specularColor="0" emissiveColor="0" shininess="0.200000002980" transparency="0.000000000000"/>
+                </Property>
+                <Property name="Transparency" type="App::PropertyPercent">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+            </Properties>
+        </ViewProvider>
+        <ViewProvider name="Y_Axis" expanded="0">
+            <Properties Count="9">
+                <Property name="BoundingBox" type="App::PropertyBool">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="DisplayMode" type="App::PropertyEnumeration">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Selectable" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="SelectionStyle" type="App::PropertyEnumeration">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="ShapeColor" type="App::PropertyColor">
+                    <PropertyColor value="848755200"/>
+                </Property>
+                <Property name="ShapeMaterial" type="App::PropertyMaterial">
+                    <PropertyMaterial ambientColor="858993408" diffuseColor="848755200" specularColor="0" emissiveColor="0" shininess="0.200000002980" transparency="0.000000000000"/>
+                </Property>
+                <Property name="Size" type="App::PropertyFloat">
+                    <Float value="300.000036621094"/>
+                </Property>
+                <Property name="Transparency" type="App::PropertyPercent">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+            </Properties>
+        </ViewProvider>
+        <ViewProvider name="XY_Plane" expanded="0">
+            <Properties Count="9">
+                <Property name="BoundingBox" type="App::PropertyBool">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="DisplayMode" type="App::PropertyEnumeration">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Selectable" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="SelectionStyle" type="App::PropertyEnumeration">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="ShapeColor" type="App::PropertyColor">
+                    <PropertyColor value="848755200"/>
+                </Property>
+                <Property name="ShapeMaterial" type="App::PropertyMaterial">
+                    <PropertyMaterial ambientColor="858993408" diffuseColor="848755200" specularColor="0" emissiveColor="0" shininess="0.200000002980" transparency="0.000000000000"/>
+                </Property>
+                <Property name="Size" type="App::PropertyFloat">
+                    <Float value="300.000036621094"/>
+                </Property>
+                <Property name="Transparency" type="App::PropertyPercent">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+            </Properties>
+        </ViewProvider>
+        <ViewProvider name="XZ_Plane" expanded="0">
+            <Properties Count="9">
+                <Property name="BoundingBox" type="App::PropertyBool">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="DisplayMode" type="App::PropertyEnumeration">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Selectable" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="SelectionStyle" type="App::PropertyEnumeration">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="ShapeColor" type="App::PropertyColor">
+                    <PropertyColor value="848755200"/>
+                </Property>
+                <Property name="ShapeMaterial" type="App::PropertyMaterial">
+                    <PropertyMaterial ambientColor="858993408" diffuseColor="848755200" specularColor="0" emissiveColor="0" shininess="0.200000002980" transparency="0.000000000000"/>
+                </Property>
+                <Property name="Size" type="App::PropertyFloat">
+                    <Float value="69.600000000000"/>
+                </Property>
+                <Property name="Transparency" type="App::PropertyPercent">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+            </Properties>
+        </ViewProvider>
+        <ViewProvider name="YZ_Plane" expanded="0">
+            <Properties Count="9">
+                <Property name="BoundingBox" type="App::PropertyBool">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="DisplayMode" type="App::PropertyEnumeration">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Selectable" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="SelectionStyle" type="App::PropertyEnumeration">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="ShapeColor" type="App::PropertyColor">
+                    <PropertyColor value="848755200"/>
+                </Property>
+                <Property name="ShapeMaterial" type="App::PropertyMaterial">
+                    <PropertyMaterial ambientColor="858993408" diffuseColor="848755200" specularColor="0" emissiveColor="0" shininess="0.200000002980" transparency="0.000000000000"/>
+                </Property>
+                <Property name="Size" type="App::PropertyFloat">
+                    <Float value="300.000036621094"/>
+                </Property>
+                <Property name="Transparency" type="App::PropertyPercent">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+            </Properties>
+        </ViewProvider>
+        <ViewProvider name="Sketch" expanded="0">
+            <Properties Count="32">
+                <Property name="AngularDeflection" type="App::PropertyAngle">
+                    <Float value="28.649999618530"/>
+                </Property>
+                <Property name="Autoconstraints" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="BoundingBox" type="App::PropertyBool">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="Deviation" type="App::PropertyFloatConstraint">
+                    <Float value="0.200000002980"/>
+                </Property>
+                <Property name="DiffuseColor" type="App::PropertyColorList">
+                    <ColorList file="DiffuseColor1"/>
+                </Property>
+                <Property name="DisplayMode" type="App::PropertyEnumeration">
+                    <Integer value="1"/>
+                </Property>
+                <Property name="DrawStyle" type="App::PropertyEnumeration">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="GridSize" type="App::PropertyLength">
+                    <Float value="10.000000000000"/>
+                </Property>
+                <Property name="GridSnap" type="App::PropertyBool">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="GridStyle" type="App::PropertyEnumeration">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="HideDependent" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="Lighting" type="App::PropertyEnumeration">
+                    <Integer value="1"/>
+                </Property>
+                <Property name="LineColor" type="App::PropertyColor">
+                    <PropertyColor value="4294967040"/>
+                </Property>
+                <Property name="LineColorArray" type="App::PropertyColorList">
+                    <ColorList file="LineColorArray1"/>
+                </Property>
+                <Property name="LineMaterial" type="App::PropertyMaterial">
+                    <PropertyMaterial ambientColor="858993408" diffuseColor="4294967040" specularColor="0" emissiveColor="0" shininess="1.000000000000" transparency="0.000000000000"/>
+                </Property>
+                <Property name="LineWidth" type="App::PropertyFloatConstraint">
+                    <Float value="2.000000000000"/>
+                </Property>
+                <Property name="PointColor" type="App::PropertyColor">
+                    <PropertyColor value="4294967040"/>
+                </Property>
+                <Property name="PointColorArray" type="App::PropertyColorList">
+                    <ColorList file="PointColorArray1"/>
+                </Property>
+                <Property name="PointMaterial" type="App::PropertyMaterial">
+                    <PropertyMaterial ambientColor="858993408" diffuseColor="4294967040" specularColor="0" emissiveColor="0" shininess="1.000000000000" transparency="0.000000000000"/>
+                </Property>
+                <Property name="PointSize" type="App::PropertyFloatConstraint">
+                    <Float value="4.000000000000"/>
+                </Property>
+                <Property name="RestoreCamera" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="Selectable" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="SelectionStyle" type="App::PropertyEnumeration">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="ShapeColor" type="App::PropertyColor">
+                    <PropertyColor value="3435973632"/>
+                </Property>
+                <Property name="ShapeMaterial" type="App::PropertyMaterial">
+                    <PropertyMaterial ambientColor="858993408" diffuseColor="3435973632" specularColor="0" emissiveColor="0" shininess="0.200000002980" transparency="0.000000000000"/>
+                </Property>
+                <Property name="ShowGrid" type="App::PropertyBool">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="ShowLinks" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="ShowSupport" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="TempoVis" type="App::PropertyPythonObject">
+                    <Python value="bnVsbA==" encoded="yes" json="yes"/>
+                </Property>
+                <Property name="TightGrid" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="Transparency" type="App::PropertyPercent">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool">
+                    <Bool value="false"/>
+                </Property>
+            </Properties>
+        </ViewProvider>
+        <ViewProvider name="AdditivePipe" expanded="0">
+            <Properties Count="21">
+                <Property name="AngularDeflection" type="App::PropertyAngle">
+                    <Float value="28.649999618530"/>
+                </Property>
+                <Property name="BoundingBox" type="App::PropertyBool">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="Deviation" type="App::PropertyFloatConstraint">
+                    <Float value="0.200000002980"/>
+                </Property>
+                <Property name="DiffuseColor" type="App::PropertyColorList">
+                    <ColorList file="DiffuseColor2"/>
+                </Property>
+                <Property name="DisplayMode" type="App::PropertyEnumeration">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="DrawStyle" type="App::PropertyEnumeration">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Lighting" type="App::PropertyEnumeration">
+                    <Integer value="1"/>
+                </Property>
+                <Property name="LineColor" type="App::PropertyColor">
+                    <PropertyColor value="421075200"/>
+                </Property>
+                <Property name="LineColorArray" type="App::PropertyColorList">
+                    <ColorList file="LineColorArray2"/>
+                </Property>
+                <Property name="LineMaterial" type="App::PropertyMaterial">
+                    <PropertyMaterial ambientColor="858993408" diffuseColor="421075200" specularColor="0" emissiveColor="0" shininess="1.000000000000" transparency="0.000000000000"/>
+                </Property>
+                <Property name="LineWidth" type="App::PropertyFloatConstraint">
+                    <Float value="2.000000000000"/>
+                </Property>
+                <Property name="PointColor" type="App::PropertyColor">
+                    <PropertyColor value="421075200"/>
+                </Property>
+                <Property name="PointColorArray" type="App::PropertyColorList">
+                    <ColorList file="PointColorArray2"/>
+                </Property>
+                <Property name="PointMaterial" type="App::PropertyMaterial">
+                    <PropertyMaterial ambientColor="858993408" diffuseColor="421075200" specularColor="0" emissiveColor="0" shininess="1.000000000000" transparency="0.000000000000"/>
+                </Property>
+                <Property name="PointSize" type="App::PropertyFloatConstraint">
+                    <Float value="2.000000000000"/>
+                </Property>
+                <Property name="Selectable" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="SelectionStyle" type="App::PropertyEnumeration">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="ShapeColor" type="App::PropertyColor">
+                    <PropertyColor value="3435973632"/>
+                </Property>
+                <Property name="ShapeMaterial" type="App::PropertyMaterial">
+                    <PropertyMaterial ambientColor="858993408" diffuseColor="3435973632" specularColor="0" emissiveColor="0" shininess="0.200000002980" transparency="0.000000000000"/>
+                </Property>
+                <Property name="Transparency" type="App::PropertyPercent">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+            </Properties>
+        </ViewProvider>
+        <ViewProvider name="Sketch001" expanded="0">
+            <Properties Count="32">
+                <Property name="AngularDeflection" type="App::PropertyAngle">
+                    <Float value="28.649999618530"/>
+                </Property>
+                <Property name="Autoconstraints" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="BoundingBox" type="App::PropertyBool">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="Deviation" type="App::PropertyFloatConstraint">
+                    <Float value="0.200000002980"/>
+                </Property>
+                <Property name="DiffuseColor" type="App::PropertyColorList">
+                    <ColorList file="DiffuseColor3"/>
+                </Property>
+                <Property name="DisplayMode" type="App::PropertyEnumeration">
+                    <Integer value="1"/>
+                </Property>
+                <Property name="DrawStyle" type="App::PropertyEnumeration">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="GridSize" type="App::PropertyLength">
+                    <Float value="10.000000000000"/>
+                </Property>
+                <Property name="GridSnap" type="App::PropertyBool">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="GridStyle" type="App::PropertyEnumeration">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="HideDependent" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="Lighting" type="App::PropertyEnumeration">
+                    <Integer value="1"/>
+                </Property>
+                <Property name="LineColor" type="App::PropertyColor">
+                    <PropertyColor value="4294967040"/>
+                </Property>
+                <Property name="LineColorArray" type="App::PropertyColorList">
+                    <ColorList file="LineColorArray3"/>
+                </Property>
+                <Property name="LineMaterial" type="App::PropertyMaterial">
+                    <PropertyMaterial ambientColor="858993408" diffuseColor="4294967040" specularColor="0" emissiveColor="0" shininess="1.000000000000" transparency="0.000000000000"/>
+                </Property>
+                <Property name="LineWidth" type="App::PropertyFloatConstraint">
+                    <Float value="2.000000000000"/>
+                </Property>
+                <Property name="PointColor" type="App::PropertyColor">
+                    <PropertyColor value="4294967040"/>
+                </Property>
+                <Property name="PointColorArray" type="App::PropertyColorList">
+                    <ColorList file="PointColorArray3"/>
+                </Property>
+                <Property name="PointMaterial" type="App::PropertyMaterial">
+                    <PropertyMaterial ambientColor="858993408" diffuseColor="4294967040" specularColor="0" emissiveColor="0" shininess="1.000000000000" transparency="0.000000000000"/>
+                </Property>
+                <Property name="PointSize" type="App::PropertyFloatConstraint">
+                    <Float value="4.000000000000"/>
+                </Property>
+                <Property name="RestoreCamera" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="Selectable" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="SelectionStyle" type="App::PropertyEnumeration">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="ShapeColor" type="App::PropertyColor">
+                    <PropertyColor value="3435973632"/>
+                </Property>
+                <Property name="ShapeMaterial" type="App::PropertyMaterial">
+                    <PropertyMaterial ambientColor="858993408" diffuseColor="3435973632" specularColor="0" emissiveColor="0" shininess="0.200000002980" transparency="0.000000000000"/>
+                </Property>
+                <Property name="ShowGrid" type="App::PropertyBool">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="ShowLinks" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="ShowSupport" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="TempoVis" type="App::PropertyPythonObject">
+                    <Python value="bnVsbA==" encoded="yes" json="yes"/>
+                </Property>
+                <Property name="TightGrid" type="App::PropertyBool">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="Transparency" type="App::PropertyPercent">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool">
+                    <Bool value="false"/>
+                </Property>
+            </Properties>
+        </ViewProvider>
+    </ViewProviderData>
+    <Camera settings="  OrthographicCamera {   viewportMapping ADJUST_CAMERA   position 18.923876 114.47726 44.717968   orientation 0.04699067 -0.28497547 -0.95738226  2.8645899   nearDistance -45.698002   farDistance 113.01044   aspectRatio 1   focalDistance 17.320509   height 171.57817  } "/>
+</Document>

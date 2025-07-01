@@ -1,0 +1,34 @@
+{
+	"folders": [
+		{
+			"path": "tools"
+		},
+		{
+			"path": "common"
+		},
+		{
+			"path": "tangnano20k"
+		}
+		,
+		{
+			"path": "gatemate"
+		}
+		,
+		{
+			"path": "artys7_50"
+		}
+		,
+		{
+			"path": "ulx3s"
+		}
+		,
+		{
+			"path": "vidor4000"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"winsock.h": "c"
+		}
+	}
+}

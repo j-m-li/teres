@@ -1,0 +1,409 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "formatting",
+            "command": "verible-verilog-format",
+            "args": [
+                "-inplace",
+                "${file}"
+            ],
+            "type": "shell",
+            "presentation": {
+                "echo": false,
+                "focus": true,
+                "reveal": "always",
+                "panel": "shared",
+              }
+        },
+        {
+            "type": "shell",
+            "label": "compile riscv",
+            "command": "iverilog",
+            "windows": {
+                "command": "iverilog.exe"
+            },
+            "args": [
+                "-Winfloop",
+                "-g2012",
+                "-gspecify",
+                "-Ttyp",
+                "-I../common/src",
+                "-o",
+                "sim_riscv.vvp",
+                "../common/src/c5_soc.v",
+                "../common/src/c5_ram.v",
+                "../common/src/c5_arbiter.v",
+                "../common/src/display.v",
+                "../common/src/async_fifo.v",
+                "../common/src/uart.v",
+                "../common/src/c5_cpu.v",
+                "../common/src/c5_fetch.v",
+                "../common/src/c5_decode.v",
+                "../common/src/c5_instr_mem.v",
+                "../common/sim/gpdi.v",
+                "../common/sim/soc_tb.v"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/../bin/"
+            },
+            "presentation": {
+                "echo": true,
+                "focus": true,
+                "reveal": "always",
+                "panel": "shared",
+              },
+        },
+        {
+            "type": "shell",
+            "presentation": {
+                "echo": true,
+                "focus": true,
+                "reveal": "always",
+                "panel": "shared",
+              },
+              "osx": {
+                "command": "clang",
+                "args": [
+                    "../tools/monitor.c",
+                    "-o",
+                    "monitor"
+                ]
+            },
+             "linux": {
+                "command": "clang",
+                "args": [
+                    "../tools/monitor.c",
+                    "-o",
+                    "monitor"
+                ]
+            },
+           "windows": {
+                "command": "clang",
+                "args": [
+                    "-Wall",
+                    "-ansi",
+                    "-D_CRT_NONSTDC_NO_DEPRECATE=1",
+                    "-D_CRT_SECURE_NO_WARNINGS=1",
+                    "../tools/monitor.c",
+                    "-o",
+                    "monitor.exe"
+                ]
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/../bin/"
+            },
+            "label": "compile monitor",
+            "dependsOrder": "sequence",
+            "dependsOn": []
+        },
+        {
+            "type": "shell",
+            "presentation": {
+                "echo": true,
+                "focus": true,
+                "reveal": "always",
+                "panel": "shared",
+              },
+             "linux": {
+                "command": "clang",
+                "args": [
+                    "-Wall",
+                    "-ansi",
+                    "../tools/dump2v.c",
+                    "-o",
+                    "dump2v"
+                ]
+            },
+            "windows": {
+                "command": "clang",
+                "args": [
+                    "-Wall",
+                    "-ansi",
+                    "-D_CRT_NONSTDC_NO_DEPRECATE=1",
+                    "-D_CRT_SECURE_NO_WARNINGS=1",
+                    "../tools/dump2v.c",
+                    "-o",
+                    "dump2v.exe"
+                ]
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/../bin/"
+            },
+            "label": "compile dump2v",
+            "dependsOrder": "sequence",
+            "dependsOn": []
+        },
+        {
+            "type": "shell",
+            "presentation": {
+                "echo": true,
+                "focus": true,
+                "reveal": "always",
+                "panel": "shared",
+              },
+             "linux": {
+                "command": "clang",
+                "args": [
+                    "-Wall",
+                    "-ansi",
+                    "../tools/bin2ter.c",
+                    "-o",
+                    "bin2ter"
+                ]
+            },
+            "windows": {
+                "command": "clang",
+                "args": [
+                    "-Wall",
+                    "-ansi",
+                    "-D_CRT_NONSTDC_NO_DEPRECATE=1",
+                    "-D_CRT_SECURE_NO_WARNINGS=1",
+                    "../tools/bin2ter.c",
+                    "-o",
+                    "bin2ter.exe"
+                ]
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/../bin/"
+            },
+            "label": "compile bin2ter",
+            "dependsOrder": "sequence",
+            "dependsOn": []
+        },
+        {
+            "type": "shell",
+            "presentation": {
+                "echo": true,
+                "focus": true,
+                "reveal": "always",
+                "panel": "shared",
+              },
+            "windows": {
+                "command": "clang",
+                "args": [
+                    "-Wall",
+                    "-ansi",
+                    "-D_CRT_NONSTDC_NO_DEPRECATE=1",
+                    "-D_CRT_SECURE_NO_WARNINGS=1",
+                    "../tools/cod5asm.c",
+                    "-o",
+                    "cod5asm.exe"
+                ]
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/../bin/"
+            },
+            "label": "compile cod5asm",
+            "dependsOrder": "sequence",
+            "dependsOn": []
+        },
+        {
+            "type": "shell",
+            "presentation": {
+                "echo": true,
+                "focus": true,
+                "reveal": "always",
+                "panel": "shared",
+              },
+            "linux": {
+                "command": "clang",
+                "args": [
+                    "-Wall",
+                    "-O0",
+                    "-target",
+                    "riscv32-unknown-elf",
+                    "-march=rv32i",
+                    "-nostdlib",
+                    "-Wl,-Ttext=0",
+                    "-fuse-ld=lld",
+                    "../common/src/c5_firmware.s",
+                    "-o",
+                    "c5_firmware.elf"
+                ]
+            },
+            "windows": {
+                "command": "clang",
+                "args": [
+                    "-Wall",
+                    "-ansi",
+                    "-O0",
+                    "-target",
+                    "riscv32-unknown-elf",
+                    "-march=rv32i",
+                    "-msoft-float",
+                    "-ffreestanding",
+                    "-nostdlib",
+                    "-nostdinc",
+                    "-nostartfiles",
+                    "-fno-builtin",
+                    "'-Wl,-Ttext=0'",
+                    "-fuse-ld=lld",
+                    "../common/src/c5_firmware.s",
+                    "-o",
+                    "c5_firmware.elf"
+                ]
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/../bin/"
+            },
+            "label": "compile c5_firmware",
+            "dependsOrder": "sequence",
+            "dependsOn": []
+        },
+        {
+            "type": "shell",
+            "presentation": {
+                "echo": true,
+                "focus": true,
+                "reveal": "always",
+                "panel": "shared",
+              },
+            "linux": {
+                "command": "/bin/sh",
+                "args": [
+                    "-c",
+                    "llvm-objdump -d c5_firmware.elf >c5_firmware.txt"
+                ]
+            },
+            "windows": {
+                "command": "cmd",
+                "args": [
+                    "/c",
+                    "chcp 65001 && llvm-objdump -d c5_firmware.elf >c5_firmware.txt"
+                ]
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/../bin/",
+            },
+            "label": "dump c5_firmware",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "compile c5_firmware"
+            ]
+        },
+        {
+            "type": "shell",
+            "presentation": {
+                "echo": true,
+                "focus": true,
+                "reveal": "always",
+                "panel": "shared",
+              },
+              "linux": {
+                "command": "./dump2v",
+                "args": [
+                    "c5_firmware.txt",
+                    "c5_firmware.v"
+                ],
+            },
+           "windows": {
+                "command": ".\\dump2v.exe",
+                "args": [
+                    "c5_firmware.txt",
+                    "c5_firmware.v"
+                ],
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/../bin/"
+            },
+            "label": "make c5_firmware",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "compile dump2v",
+                "dump c5_firmware"
+            ]
+        },
+        {
+            "type": "shell",
+            "presentation": {
+                "echo": true,
+                "focus": true,
+                "reveal": "always",
+                "panel": "shared",
+              },
+            "windows": {
+                "command": ".\\bin2ter.exe",
+                "args": [
+                    "b2t.v",
+                    "t2b.v"
+                ],
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/../bin/"
+            },
+            "label": "make b2t",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "compile bin2ter",
+            ]
+        },
+        {
+            "type": "shell",
+            "presentation": {
+                "echo": true,
+                "focus": true,
+                "reveal": "always",
+                "panel": "shared",
+              },
+            "linux": {
+                "command": "vvp"
+            },
+            "windows": {
+                "command": "C:\\msys64\\ucrt64\\bin\\vvp.exe"
+            },
+            "args": [
+                "-N",
+                "sim_riscv.vvp",
+                "-lx2"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/../bin/"
+            },
+            "label": "simulate",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "compile riscv"
+            ]
+        },
+        {
+            "type": "shell",
+            "presentation": {
+                "echo": true,
+                "focus": true,
+                "reveal": "always",
+                "panel": "shared",
+              },
+            "command": "echo done",
+            "args": [],
+            "options": {
+                "cwd": "${workspaceFolder}/../bin"
+            },
+            "label": "all",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "compile monitor",
+                "make c5_firmware"
+            ]
+        },
+        {
+            "type": "shell",
+            "presentation": {
+                "echo": true,
+                "focus": true,
+                "reveal": "always",
+                "panel": "shared",
+            },
+            "windows": {
+                "command": "cmd /c",
+                "args": [".\\monitor", "COM6"]
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/../bin"
+            },
+            "label": "monitor",
+            "dependsOrder": "sequence",
+            "dependsOn": []
+        }
+    ]
+}

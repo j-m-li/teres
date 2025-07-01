@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name TERES)(type KiCad)(uri "$(KIPRJMOD)/TERES.pretty")(options "")(descr ""))
-)
